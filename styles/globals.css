@@ -1,3 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@tailwind base;         /* Mengimpor style dasar seperti reset CSS dan default browser styling */
+@tailwind components;   /* Mengimpor komponen yang bisa dikustomisasi atau dibuat sendiri (seperti button, card, dll) */
+@tailwind utilities;    /* Mengimpor class utility Tailwind seperti padding, margin, warna, font, dsb */
+

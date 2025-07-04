@@ -1,116 +1,117 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 2rem; /* Memberi padding kiri dan kanan sebesar 2rem */
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;           /* Tinggi minimum 100% dari tinggi viewport */
+  padding: 4rem 0;             /* Padding atas dan bawah 4rem, kiri kanan 0 */
+  flex: 1;                     /* Elemen tumbuh untuk mengisi ruang fleksibel */
+  display: flex;              /* Mengaktifkan flexbox */
+  flex-direction: column;     /* Menyusun isi secara vertikal */
+  justify-content: center;    /* Memusatkan isi secara vertikal */
+  align-items: center;        /* Memusatkan isi secara horizontal */
 }
 
 .footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+  display: flex;              /* Mengaktifkan flexbox */
+  flex: 1;                    /* Mengisi ruang yang tersedia */
+  padding: 2rem 0;            /* Padding atas dan bawah 2rem */
+  border-top: 1px solid #eaeaea; /* Garis atas berwarna abu terang */
+  justify-content: center;    /* Isi berada di tengah horizontal */
+  align-items: center;        /* Isi berada di tengah vertikal */
 }
 
 .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  display: flex;              /* Tautan sebagai flex container */
+  justify-content: center;    /* Isi di tengah horizontal */
+  align-items: center;        /* Isi di tengah vertikal */
+  flex-grow: 1;               /* Memperluas untuk mengisi ruang */
 }
 
 .title a {
-  color: #0070f3;
-  text-decoration: none;
+  color: #0070f3;             /* Warna biru khas Next.js */
+  text-decoration: none;      /* Menghapus garis bawah default */
 }
 
 .title a:hover,
 .title a:focus,
 .title a:active {
-  text-decoration: underline;
+  text-decoration: underline; /* Tambahkan garis bawah saat hover, fokus, atau aktif */
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  margin: 0;                  /* Hilangkan margin default */
+  line-height: 1.15;          /* Tinggi baris */
+  font-size: 4rem;            /* Ukuran font besar */
 }
 
 .title,
 .description {
-  text-align: center;
+  text-align: center;         /* Pusatkan teks */
 }
 
 .description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+  margin: 4rem 0;             /* Margin atas dan bawah 4rem */
+  line-height: 1.5;           /* Tinggi baris sedang */
+  font-size: 1.5rem;          /* Ukuran font sedang */
 }
 
 .code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
+  background: #fafafa;        /* Latar belakang abu terang */
+  border-radius: 5px;         /* Sudut membulat */
+  padding: 0.75rem;           /* Spasi dalam */
+  font-size: 1.1rem;          /* Ukuran font sedikit lebih besar */
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+    Bitstream Vera Sans Mono, Courier New, monospace; /* Font monospace untuk tampilan kode */
 }
 
 .grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  display: flex;              /* Flex container */
+  align-items: center;        /* Isi sejajar tengah secara vertikal */
+  justify-content: center;    /* Isi sejajar tengah secara horizontal */
+  flex-wrap: wrap;            /* Membungkus isi jika melebihi lebar */
+  max-width: 800px;           /* Lebar maksimum grid */
 }
 
 .card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  margin: 1rem;               /* Jarak antar kartu */
+  padding: 1.5rem;            /* Spasi dalam kartu */
+  text-align: left;           /* Teks rata kiri */
+  color: inherit;             /* Warna teks mengikuti induk */
+  text-decoration: none;      /* Hilangkan dekorasi link */
+  border: 1px solid #eaeaea;  /* Garis abu terang */
+  border-radius: 10px;        /* Sudut membulat */
+  transition: color 0.15s ease, border-color 0.15s ease; /* Animasi perubahan warna */
+  max-width: 300px;           /* Lebar maksimum kartu */
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #0070f3;             /* Warna teks biru saat interaksi */
+  border-color: #0070f3;      /* Warna border biru saat interaksi */
 }
 
 .card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  margin: 0 0 1rem 0;         /* Margin bawah 1rem */
+  font-size: 1.5rem;          /* Ukuran heading sedang */
 }
 
 .card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  margin: 0;                  /* Hilangkan margin default */
+  font-size: 1.25rem;         /* Ukuran font sedang */
+  line-height: 1.5;           /* Tinggi baris sedang */
 }
 
 .logo {
-  height: 1em;
-  margin-left: 0.5rem;
+  height: 1em;                /* Tinggi setara tinggi teks */
+  margin-left: 0.5rem;        /* Jarak dari elemen sebelumnya */
 }
 
+/* Media query untuk tampilan mobile */
 @media (max-width: 600px) {
   .grid {
-    width: 100%;
-    flex-direction: column;
+    width: 100%;              /* Lebar penuh */
+    flex-direction: column;   /* Susun elemen grid secara vertikal */
   }
 }

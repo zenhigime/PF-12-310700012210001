@@ -1,18 +1,21 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
+// Bagian generator menentukan jenis client yang akan dibuat oleh Prisma
 generator client {
-  provider = "prisma-client-js"
+  provider = "prisma-client-js" // Menggunakan Prisma Client untuk JavaScript/TypeScript
 }
 
+// Bagian datasource menjelaskan sumber data (database) yang digunakan
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "sqlite"           // Menggunakan SQLite sebagai database
+  url      = "file:./dev.db"    // Lokasi file database SQLite (relatif terhadap root proyek)
 }
 
+// Model Contact merepresentasikan tabel 'Contact' di database
 model Contact {
-  id String @id @default(cuid())
-  firstname String
-  lastname String
-  email String
+  id        String @id @default(cuid()) // ID unik untuk setiap kontak, dihasilkan otomatis dengan cuid()
+  firstname String                      // Kolom untuk nama depan
+  lastname  String                      // Kolom untuk nama belakang
+  email     String                      // Kolom untuk email
 }
