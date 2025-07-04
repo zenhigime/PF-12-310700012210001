@@ -1,0 +1,44 @@
+#Tidak bisa menambahkan komentar di file Json
+
+{
+  "name": "contactsapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate" // tambah kode
+  },
+  "dependencies": {
+    "@prisma/client": "^4.15.0", // upgrade version
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.28.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.3",
+    "eslint": "8.11.0",
+    "eslint-config-next": "12.1.0",
+    "postcss": "^8.4.11",
+    "prisma": "^4.15.0", // upgrade version
+    "tailwindcss": "^3.0.23"
+  }
+}
+
+// kode "postinstall" ditambahkan dan versi prisma di upgrade karena ada masalah
+// error - Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.
+// setelah melakukan fork project dari https://codesandbox.io/p/github/hynra/PF-12
+// setelah itu kita hapus folder "node_modules" dengan command "rm -rf node_modules package-lock.json"
+// setelah itu kita run command "npm install"
+// problem solving berhasil dengan pesan seperti dibawah
+// > contactsapp@0.1.0 postinstall
+// > prisma generate
+// Environment variables loaded from .env
+// Prisma schema loaded from prisma/schema.prisma
+// ✔ Generated Prisma Client (4.16.2 | library) to ./node_modules/@prisma/client in 25ms
+// You can now start using Prisma Client in your code. Reference: https://pris.ly/d/client
+// import { PrismaClient } from '@prisma/client'
+// const prisma = new PrismaClient()
